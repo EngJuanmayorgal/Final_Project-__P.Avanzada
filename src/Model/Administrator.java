@@ -16,6 +16,5 @@ public class Administrator extends Person {
     public void setClave(String clave) {
         this.clave = clave;
     }
-    
 
 }
