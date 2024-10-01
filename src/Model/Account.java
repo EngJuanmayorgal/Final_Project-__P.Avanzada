@@ -6,6 +6,8 @@ public class Account {
 
     private final User user;
     private ArrayList<Post> post;
+    private ArrayList<Account> frients;
+    private ArrayList<Conversation> conversations;
 
     public Account(User user) {
         this.user = user;
@@ -18,8 +20,8 @@ public class Account {
 
     public void setPost(ArrayList<Post> post) {
         this.post = post;
-
     }
+
     public ArrayList<Post> getPost() {
         return post;
     }

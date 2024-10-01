@@ -2,19 +2,19 @@ package Model;
 
 public class Administrator extends Person {
 
-    private String clave;
+    private String password;
 
-    public Administrator(String clave, String nombres, String apellidos) {
-        super(nombres, apellidos);
-        this.clave = clave;
+    public Administrator(String password, String name, String lastName) {
+        super(name, lastName);
+        this.password = password;
     }
 
-    public String getClave() {
-        return clave;
+    public String getPassword() {
+        return password;
     }
 
-    public void setClave(String clave) {
-        this.clave = clave;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
 }

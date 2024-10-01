@@ -2,28 +2,28 @@ package Model;
 
 public class Person {
 
-    private String nombres;
-    private String apellidos;
+    private String name;
+    private String lastName;
 
-    public Person(String nombres, String apellidos) {
-        this.nombres = nombres;
-        this.apellidos = apellidos;
+    public Person(String name, String lastName) {
+        this.name = name;
+        this.lastName = lastName;
     }
 
-    public String getNombres() {
-        return nombres;
+    public String getName() {
+        return name;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getApellidos() {
-        return apellidos;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setApellidos(String apellidos) {
-        this.apellidos = apellidos;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
 }
