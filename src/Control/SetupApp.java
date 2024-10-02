@@ -14,6 +14,17 @@ public class SetupApp implements Serializable {
     protected final ArrayList<Account> accounts;
     private Administrator admin;
 
+    public void sendMessage(Account sender, Account recipient,Object message) {
+        for (Account account : accounts) {
+            if (account==sender) {
+                account.recipientMessage(recipient, message);
+            }
+            if (account==recipient) {
+                account.recipientMessage(sender, message);
+            }
+        }
+    }
+
     public SetupApp() {
         this.accounts = new ArrayList<>();
     }
@@ -26,7 +37,6 @@ public class SetupApp implements Serializable {
     public void deleteAccounts(Account account) {
         this.accounts.remove(account);
     }
-
 
     public Administrator getAdmin() {
         return admin;
