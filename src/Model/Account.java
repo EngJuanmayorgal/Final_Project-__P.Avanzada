@@ -6,7 +6,7 @@ public class Account {
     
     private final User user;
     private ArrayList<Post> post;
-    private ArrayList<Account> frients;
+    private ArrayList<Account> friends;
     private ArrayList<Conversation> conversations;
     
     public Account(User user) {
@@ -30,8 +30,8 @@ public class Account {
         }
     }
     
-    public ArrayList<Account> getFrients() {
-        return frients;
+    public ArrayList<Account> getFriends() {
+        return friends;
     }
     
     public ArrayList<Conversation> getConversations() {
