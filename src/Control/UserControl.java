@@ -13,7 +13,7 @@ public class UserControl {
 
     
     private void SeeFriends(){
-        for (Account account : account.getFrients()) {
+        for (Account account : account.getFriends()) {
             
         }
     }
